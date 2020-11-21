@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name cc1101)(type Legacy)(uri ${KIPRJMOD}/additional/cc1101.lib)(options "")(descr ""))
+  (lib (name ATmega128_Breakout_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/ATmega128_Breakout_Board-rescue.lib)(options "")(descr ""))
+)
