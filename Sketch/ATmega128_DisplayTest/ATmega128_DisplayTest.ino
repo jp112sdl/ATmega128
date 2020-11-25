@@ -114,7 +114,7 @@ void setup(void) {
   display.setCursor(tm12864.centerPosition(version), 38);
   display.print(version);
 
-    display.setFont(u8g2_font_profont10_mf);
+  display.setFont(u8g2_font_profont10_mf);
   display.setCursor(tm12864.centerPosition(compiledMsg), 54);
   display.print(compiledMsg);
   display.setCursor(tm12864.centerPosition(compiledDate), 64);
