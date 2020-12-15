@@ -42,8 +42,8 @@ typedef AskSin<LedType,NoBattery,RadioType> HalType;
 
 // see https://github.com/AskSinPP/asksinpp.de/blob/master/Grundlagen/FAQ/Fehlerhafte_CC1101.md
 #define ACTIVE_PING
-HMID PING_FROM(0x4B,0x2F,0xEB);      // from address for status message e.g. switch
-HMID PING_TO(0x58,0x37,0xa1);        // to address for status message / central / CCU
+HMID PING_FROM(0x59,0x32,0xaf);      // from address for status message e.g. switch
+HMID PING_TO(0x2B,0xe1,0x4d);        // to address for status message / central / CCU
 #ifdef ACTIVE_PING
   #define SCANTIME seconds2ticks(5)  // maximal time to wait for a valid message
 #else
