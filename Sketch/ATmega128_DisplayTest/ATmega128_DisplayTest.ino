@@ -21,7 +21,9 @@
 #include "TM12864_LCD.h"
 #include <AskSinPP.h>
 #include <MultiChannelDevice.h>
-
+#ifndef ASKSIN_PLUS_PLUS_VERSION_STR
+  #define ASKSIN_PLUS_PLUS_VERSION_STR ASKSIN_PLUS_PLUS_VERSION
+#endif
 U8G2_ST7565_64128N_F_4W_HW_SPI display(U8G2_R0, LCD_CS, LCD_DC, LCD_RST);
 TM12864<LCD_RED, LCD_GREEN, LCD_BLUE> tm12864(display);
 
@@ -100,7 +102,7 @@ void setup(void) {
 
   const char * title        PROGMEM = "ATmega128";
   const char * asksinpp     PROGMEM = "AskSin++";
-  const char * version      PROGMEM = "V " ASKSIN_PLUS_PLUS_VERSION;
+  const char * version      PROGMEM = "V " ASKSIN_PLUS_PLUS_VERSION_STR;
   const char * compiledMsg  PROGMEM = "compiled on";
   const char * compiledDate PROGMEM = __DATE__ " " __TIME__;
 
