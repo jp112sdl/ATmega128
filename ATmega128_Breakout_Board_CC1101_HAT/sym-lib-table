@@ -1,4 +1,6 @@
 (sym_lib_table
-  (lib (name cc1101)(type Legacy)(uri ${KIPRJMOD}/additional/cc1101.lib)(options "")(descr ""))
-  (lib (name ATmega128_Breakout_Board-rescue)(type Legacy)(uri ${KIPRJMOD}/ATmega128_Breakout_Board-rescue.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "cc1101")(type "Legacy")(uri "${KIPRJMOD}/additional/cc1101.lib")(options "")(descr ""))
+  (lib (name "ATmega128_Breakout_Board-rescue")(type "Legacy")(uri "${KIPRJMOD}/ATmega128_Breakout_Board-rescue.lib")(options "")(descr ""))
+  (lib (name "ATmega128_Breakout_Board_CC1101_HAT-rescue")(type "KiCad")(uri "${KIPRJMOD}/ATmega128_Breakout_Board_CC1101_HAT-rescue.kicad_sym")(options "")(descr ""))
 )
